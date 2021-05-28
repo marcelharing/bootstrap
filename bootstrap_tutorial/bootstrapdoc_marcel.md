@@ -36,7 +36,7 @@ Oder Bootstrap die Spaltenposition selber einteilen lassen, bei 3 Spalten nimmt 
     </div> 
 ```
 
-# Typographie
+## Typographie
 Neben den üblichen HTML-Überschriften gibt es weitere Klassen und HTML-Tags um die Typologie zu gestalten:
 + Abkürzung: 
 `<abbr title="World Health Organization">WHO</abbr>`
@@ -93,7 +93,7 @@ Alternativ kann auch mit .table-striped oder .table-bordered gearbeitet werden.
 </div>
 ```
 
-# Bilder
+## Bilder
 Bilder können folgendermaßen ausgerrichtet werden:
 ``` html
 <img src="paris.jpg" class="float-left">
@@ -102,7 +102,7 @@ Bilder können folgendermaßen ausgerrichtet werden:
 ```
 Responsive können Bilder mit der Klasse `class="img-fluid"` gemacht werden. Dabei wird die Bildgröße an den Bildschirm bzw. das Parent Element angepasst.
 
-# Badges, Buttons, Alerts, Jumbotron
+## Badges, Buttons, Alerts, Jumbotron
 
 Jumbotrons sind große, aufmerksamkeitserregende Container:
 ``` html
@@ -150,7 +150,7 @@ Badges sind Fähnchen die Text kennzeichnen:
   <span class="badge badge-dark">Dark</span>
 ```
 
-# Pagination (Seitenzahlen)
+## Pagination (Seitenzahlen)
 Ähnelt Buttons und sollte mit einer ul-list genutzt werden:
 ``` html
 <div class="container">              
