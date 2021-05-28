@@ -5,7 +5,7 @@ Container sind ein Grundgerüst in Bootstrap. Es gibt zwei wesentliche Container
 + Fixed Container: nutzt eine festgelegte width, je nach Bildschirmgröße `<div class="container">`
 + Fluid Container: nutzt die volle width `<div class="container-fluid">`
 
-Mit `.container-sm|md|lg|xl` lassen sich responsive Container erzeugen, je nachdem ob sie schon bei kleinen Bildschirmen (sm) oder bei großen (xl) die Weite auf 100% stellen sollen.
+Mit `.container-sm|md|lg|xl` bzw. `xxl`(bootstrap5) lassen sich responsive Container erzeugen, je nachdem ob sie schon bei kleinen Bildschirmen (sm) oder bei großen (xl) die Weite auf 100% stellen sollen.
 
 ## Grid 
 Die responsive Griddarstellung erlaubt bis zu 12 Spalten.
