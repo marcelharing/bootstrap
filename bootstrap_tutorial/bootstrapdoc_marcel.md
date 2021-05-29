@@ -120,7 +120,7 @@ Alerts zeigen Hinweise an:
 </div>
 ```
 
-Buttons:
+Einfache Buttons:
 ``` html
 <a href="#" class="btn btn-info" role="button">Link Button</a>
 <button type="button" class="btn btn-info">Button</button>
@@ -143,6 +143,16 @@ Eine leicht andere Funktion als Buttons bieten Dropdownbuttons an:
 </div>
 ```
 
+Ein Collapsebutton verbirgt (oft längeren) Content und zeigt ihn beim Aufklappen:
+``` html
+<div class="container">
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Collapsebutton</button>
+  <div id="demo" class="collapse">
+Ein Sampletext, ein Sampletext.
+  </div>
+</div>
+```
+
 Badges sind Fähnchen die Text kennzeichnen:
 ``` html
   <span class="badge badge-info">Info</span>
@@ -159,4 +169,72 @@ Badges sind Fähnchen die Text kennzeichnen:
     <li class="page-item"><a class="page-link" href="#">Next</a></li>
   </ul>
 </div>
+```
+
+## Cards
+Karten sind rechteckige Boxen. 
+Die Grundstruktur lautet wie folgt:
+``` html
+<div class="card">
+  <div class="card-body">Basic card</div>
+</div>
+```
+Cards können mit Bildern, Headern und Footern angereichert werden:
+``` html
+<div class="container">
+  <div class="card" style="width:400px">
+    <div class="card-header">Header</div>
+    <img class="card-img-top" src="image.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Max Mustermann</h4>
+      <p class="card-text">Mustertextmustertext.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+    <div class="card-footer">Footer</div>
+  </div>
+</div>
+```
+
+## Nav Menüs
+
+Navigationsmenüs können durch Listen erstellt werden, dazu einfach `nav` als Klasse bei `<ul>` und `nav-item` bei `<li>` hinzufügen. Der Link in der Navigation sollte mit `nav-link` klassifiziert werden.
+
+Statt `nav` kann auch `nav-tabs` oder `.nav-pills` verwendet werden. Nav Menüs sind übrigens auch toggleable.
+
+## Modals, Tooltip, Toast, Popover
+Es gibt auch Modals und Tooltips. Erstere zeigen eine Art Popup an bei einem Mausklick, Zweitere zeigen einen Hinweis beim Drüberfahren der Maus an. Ein Toast zeigt einen kleinen Hinweispopup für eine kurze Zeit an und ein Popover ähnelt dem Tooltip.
+
+## Navbar
+Grundsätzlich startet eine Navbar mit folgendem HTML Element:
+``` html
+<nav class="navbar navbar-expand-sm">
+```
+`navbar-expand-**` kennzeichnet ab wann die Navbar vertikal gestapelt wird (für die mobile Ansicht) und kann mit `sm|md|lg|xl` bzw. `xxl`(bootstrap5) versehen werden.
+
+Innerhalb des nav-Element befindet sich wiederum eine Liste:
+``` html
+
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link Numero 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link Numero 2</a>
+    </li>
+  </ul>
+  ```
+Will man ein Logo benutzen fügt man folgenden Code ein:
+
+``` html
+  <a class="navbar-brand" href="#">
+    <img src="logobild.jpg" alt="logo" style="width:20px;">
+  </a>
+```
+Sollte ab einer bestimmten Bildschirmgröße die Navbar mit einem Togglebutton versehen werden muss dieser Code für einen Button hinzugefügt werden. Der restliche Inhalt sollte in einem div umhüllt werden auf das auch data-target verweist:
+``` html
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navleiste">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="Navleiste">...</div>
 ```
