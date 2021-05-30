@@ -238,3 +238,46 @@ Sollte ab einer bestimmten Bildschirmgröße die Navbar mit einem Togglebutton v
 
   <div class="collapse navbar-collapse" id="Navleiste">...</div>
 ```
+Mit Navbartext kann zusätzlicher Text der Navigationsleiste hinzugefügt werden:
+ ``` html
+  <span class="navbar-text">
+    Navbartext
+  </span>
+```
+Soll die Navigationsleiste fixiert sein, wird bei `<nav>` eine `fixed-top` oder `fixed-bottom` Klasse hinzugefügt.
+
+## Scrollspy
+Ein Scroolspy updatet Links im Zuge des Scrollens automatisch, gut um dem User Orientierung zu geben.
+
+## Gestaltung mit Utilities
+In Bootstrap kann das Design auch direkt über Bootstrapmodifier gestaltet werden, anstatt auf CSS zuzugreifen. Es kann dadurch der border, border shadow, border radius, floaut, align, width, height, spacing, shadow, die responsivness von eingebetteten Inhalten, Typographie, Farben, block elements (Inhalt wird dabei ab einer bestimmten Größe zu einem Block zusammengefügt)
+
+
+## Flexbox
+Flexboxen sind mit der Klasse d-flex verfügbar:
+``` html
+<div class="container">
+  <div class="d-flex text-white">  
+    <div class="p-1 bg-info">Flex 1</div>
+    <div class="p-1 bg-warning">Flex 2</div>
+    <div class="p-1 bg-primary">Flex 3</div>
+  </div>
+</div>
+```
+Eine responsive Tabelle lässt sich etwa so realisieren:
+``` html 
+  <div class="d-md-table" style="width:100%">
+    <div class="d-md-table-row" >
+  	  <div class="d-md-table-cell">
+  	  	<p>Some text</p>
+  	  </div>
+  	  <div class="d-md-table-cell">
+  	  	<p>Some text</p>
+    	</div>
+  	  <div class="d-md-table-cell">
+  	  	<p>Some text</p>
+  	  </div>
+	  </div>
+  </div>
+</div>
+```
